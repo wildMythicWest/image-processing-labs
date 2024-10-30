@@ -24,14 +24,32 @@ H11 = [
 ];
 
 input_image = imread('coffee.webp');
-% imshow(input_image)
+figure;
+imshow(input_image)
 gray_image = rgb2gray(input_image);
 % imshow(gray_image)
-output_image = filter2(H6, gray_image);
+%output_image_H3 = filter2(H3, gray_image);
+%output_image_H6 = filter2(H6, gray_image);
 
-imshow(output_image);
+%output_image_H10 = filter2(H10, gray_image);
 
-% analyze_filter(H3, 'H3');
-% analyze_filter(H6, 'H6');
-% analyze_filter(H10, 'H10');
-% analyze_filter(H11, 'H11');
+%output_image_H11 = filter2(H11, gray_image);
+
+output_image_H3 = imfilter(gray_image, H3);
+%output_image_H6 = filter2(H6, gray_image);
+
+%output_image_H10 = filter2(H10, gray_image);
+
+%output_image_H11 = filter2(H11, gray_image);
+
+
+figure('Name', ['H3', ' 1'], 'NumberTitle', 'off');
+imshow(output_image_H3);
+
+
+
+
+%analyze_filter(H3, 'H3');
+%analyze_filter(H6, 'H6');
+%analyze_filter(H10, 'H10');
+%analyze_filter(H11, 'H11');
