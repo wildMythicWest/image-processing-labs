@@ -46,7 +46,14 @@ output_image_H3 = imfilter(gray_image, H3);
 figure('Name', ['H3', ' 1'], 'NumberTitle', 'off');
 imshow(output_image_H3);
 
+figure('Name', ['H6', ' 1'], 'NumberTitle', 'off');
+imshow(output_image_H6);
 
+figure('Name', ['H10', ' 1'], 'NumberTitle', 'off');
+imshow(output_image_H10);
+
+figure('Name', ['H11', ' 1'], 'NumberTitle', 'off');
+imshow(output_image_H11);
 
 
 %analyze_filter(H3, 'H3');
